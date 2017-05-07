@@ -2,71 +2,90 @@
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=News+Cycle|Passion+One" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	
+
+
 	<title>Jon Berry Portfolio</title>
 </head>
 <body>
-	
-	<!-- div containing for the logo and the nav bar -->
-	<section id="headerBar">
-		<div id="barContent">
-			<h1 id="logo">Jon Berry</h1>
-		<!--Nav bars at top right of page-->
-			<nav>
-				<a id="nav1" class="pageLink" href="index.html">About</a>
-				<a id="nav2" class="pageLink" href="portfolio.html">Portfolio</a>
-				<a class="pageLink" href="contact.html">Contact</a>
-			</nav>
+	<nav class="navbar navbar-default navJon">
+		<div class="container headerBar">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+				<a class="navbar-brand" href="index.html">Jon Berry</a>
+			</div>
+			<div class="collapse navbar-collapse navbar-right" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">About</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li> 
+					<li><a href="contact.html">Contact</a></li> 
+				</ul>
+			</div>
 		</div>
-	</section>
+	</nav>
 
-	<div class="pageContainer">
-		<!--Block with main content on page-->
-		<section id="mainContent">
-			<!--Section with Contact inputs and forms to send to me.-->
-			<header>
+	<div class="container">
+		<div class="row mainRow">
+			<div class="col-lg-7 col-md-5 col-xs-12 mainContent">
 				<h2>Contact</h2>
-			</header>
 
-			<hr>
+				<hr>
+				
+				<form>
+					<div class="form-group">
+						<label for="exampleName">Name</label>
+						<input type="name" class="form-control" id="exampleName" aria-describedby="nameHelp" placeholder="John Smith">
+ 					 </div>
 
-			<p class="contactP"> Name</p>
-			<input class="inputFields" type="text" name="Name" value="John Smith">
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="johnsmith@fakemail.com">
+					</div>
 
-			<p class="contactP"> Email</p>
-			<input class="inputFields" type="text" name="Email" value="example@gmail.com">
+					<div class="form-group">
+						<label for="comment">Message</label>
+						<textarea class="form-control noResize" rows="8" id="comment"></textarea>
+					</div>
 
-			<p class="contactP"> Message</p>
-			<textarea></textarea>
+					<button type="button" class="btn">Submit</button>
+			</div>
 
-			<br>
-			<br>
+			<div class="col-lg-5 col-md-7 col-xs-12 aside">
+				<h3>Connect With Me</h3>
+			
+				<hr>
 
-			<input id="submitButton" type="submit" name="submit">
-			<br>
-		</section>
+				<!--Buttons to connect with me-->
+				<a class="connectLinks" href="https://github.com/jonpber" target="_blank"> <img class="connectIcons" src="assets/images/Github.png" alt="GitHub"></a>
+				<a class="connectLinks" href="https://www.linkedin.com/in/jonpber/" target="_blank"><img class="connectIcons" src="assets/images/linkedin.png" alt="LinkedIn"></a>
+				<a class="connectLinks" href="http://stackoverflow.com/users/7799613/jon-berry" target="_blank"><img class="connectIcons" src="assets/images/stackoverflow.png" alt="StackOverflow"></a>
+			</div>
 
-
-		<!--Connect With Me Section-->
-		<aside id="connectMe">
-			<h3>Connect With Me</h3>
-			<hr>
-
-			<!--Buttons to connect with me-->
-			<a href="https://github.com/jonpber" target="_blank"> <img id="gitHub" class="connectIcons" src="assets/images/Github.png" alt="GitHub"></a>
-			<a href="https://www.linkedin.com/in/jonpber/" target="_blank"><img class="connectIcons" src="assets/images/linkedin.png" alt="LinkedIn"></a>
-			<a href="http://stackoverflow.com/users/7799613/jon-berry" target="_blank"><img class="connectIcons" src="assets/images/stackoverflow.png" alt="StackOverflow"></a>
-		</aside>
-
+		</div>
 	</div>
 
-	<!--Footer Bar-->
-	<footer>
-		<p id="footerP">@ Copyright 2017 Jon Berry</p>
+	<footer class="container-fluid">
+		<p class="footerP">@ Copyright 2017 Jon Berry</p>
 	</footer>
 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
