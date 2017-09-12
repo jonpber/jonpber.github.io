@@ -1,294 +1,174 @@
-/*-----------------site-wide content------------------*/
-html {
-		position: relative;
-		min-height: 100%;
+a:hover {
+    text-decoration: none;
+}
+
+.aboutMeText {
+    margin: 18px 0 35px;
+}
+
+.blackH2 {
+	color: black;
+}
+
+.blueH2 {
+	color: white;
+	text-shadow: 3px 3px 6px black;
+	margin-top: 0;
+	margin-bottom: 10px;
 }
 
 body {
-	background-image: url("../images/wov.png");
-
+	background: #313647;
 }
 
-/*Preloading hover bio pic.*/
-body:after{
-	display:none;
-	content: url("../images/jb.png");
+.color {
+	background: red;
+	width: 300px;
+	height: 300px;
+	margin: auto;
 }
 
-p {
-	font-size: 16px;
+.contact {
+    padding: 30px 50px;
 }
 
-
-/*Sets up the main content block.*/
-.mainContent{
-	background-color: white;
-	padding: 20px;
-	margin-bottom: 3%;
-	border: 1px solid lightgrey;
-}
-
-.mainRow {
-	margin-bottom: 75px;
-}
-
-/*Sets up the conntect with me block.*/
-.aside{
-	background-color: white;
-	height: 180px;
-	text-align: center;
-	margin-bottom: 15px;
-	border: 1px solid lightgrey;
-}
-
-.connectIcons {
-	width: 60px;
-	height: 60px;
-	margin-top: 10px;
-}
-
-.connectLinks:hover {
-	opacity: 0.75;
-}
-
-
-/*Sets up the header bars for the logo, page header, and connect with me header.*/
-h1, h2, h3 {
-	font-family: 'Passion One', cursive;
-	color: #4aaaa5;
-	font-weight: normal;
-	letter-spacing: 2.5px;
-}
-
-h1 {
-	color: white;
-	padding-top: 6px;
+.container1, .container2, .container3 {
 	margin: 0;
-	}
+	width: 101%;
+	padding: 0;
+	box-shadow: 1px 1px 20px black;
+	height: 600px;
+	background-image: url("../images/ep_naturalwhite.png");
+}
+
+.container2 {
+    height: 900px;
+}
+
+.container3 {
+	height: 460px;
+}
+
+form {
+	text-align: center;
+}
+
 
 h2 {
-	font-size: 37px;
-	margin-top: 12px;
+	font-size: 50px;
+    margin: 30px;
+    text-align: center;
+}
+
+h3 {
+	color: white;
+	font-size: 40px;
+	line-height: 45px;
+	text-shadow: 3px 3px 6px black;
+}
+
+h4 {
+	color: white;
+	font-size: 25px;
+	text-shadow: 3px 3px 6px black;
+	line-height: 32px;
+}
+
+.h3NoPix{
+	color: black;
+	text-shadow: none;
+	font-size: 30px;
+	margin-top: 0;
+}
+
+.h3Pix {
+	color: black;
+	text-shadow: none;
+	font-family: 'Press Start 2P', cursive;
+	margin-top: 0;
+	font-size: 22px;
 }
 
 hr {
-	border-top: 2px solid lightgrey;
-	border-left: none;
-	margin: 0 0 15px;
+	border-top: 2px dotted #eee;
 }
 
+.introDiv {
+	margin-top: 230px;
 
-
-/*Sets up the content for the header bar itself and its elements.*/
-.navbar-default .navbar-brand, .navbar-brand:hover {
-	color: white;
-	background-color: #4aaaa5;
-	font-family: 'Passion One', cursive;
-	font-size: 35px;
-	letter-spacing: 1.8px;
 }
 
-.logo {
-	background-color: #4aaaa5;
-	height: 50px;
+.introH1 {
 	text-align: center;
+	color: #3d3d3d;
+	font-size: 60px;
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: white;
+.introH1, h2, h3, h4 {
+	font-family: 'Oswald', sans-serif;
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-	background-color: #4aaaa5;
-    }
+.input-group {
+	margin: 15px auto;
+	width: 50%;
+	box-shadow: 2px 4px 11px rgba(0, 0, 0, 0.72);
+}
 
-.navbar-toggle {
+input[type=submit] {
+	border-radius: 6px;
 	border: none;
-}
-
-.navJon {
-	border: none;
-	border-bottom: 1px solid lightgrey;
-}
-
-
-/*The list is used for the nav buttons.*/
-ul {
-	margin-top: 12px;
-	text-align: center;
-}
-
-li a {
-	color: #666;
-	text-decoration: none;
-	font-family: 'News Cycle', sans-serif;
-	font-size: 18px;
+	padding: 7px;
+	color: black;
+	box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.8);
 }
 
 li {
-	display: inline;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	padding: 0px 10px;
-	border-left: 1px solid #eae8e8;
-
+	font-size: 33px;
 }
 
-.navButtons {
-	background-color: white;
+.linkIcon {
+	width: 250px;
 }
 
-li:first-child {
-	border-left: none;
-}
-
-/*Sets up the rules for the footer.*/
-
-footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 75px;
-	background-color: #666666;
-	color: white;
-	border-top: 7px solid #4aaaa5;
-	text-align: center;
-}
-
-/*the footer text*/
-.footerP {
-	color: lightgrey;
-	font-size: 15px;
-	margin: 23px 0 0;
-	width: 90%;
-	display: inline-block;
-}
-
-
-
-/*---------------------individual page content---------------------*/
-/*--------About Me Page content--------*/
-.bioPic {
+.portBack {
+    background: #1e5990;
+    color: white;
 	width: 100%;
 	height: 100%;
-	margin-bottom: 15px;
-	float: left;
+	padding: 30px;
 }
 
-.bioPic:hover {
-	content: url("../images/jb.png");
+.portImg {
+	width: 300px;
+	height: 300px;
+	border-radius: 70px;
+	margin: 0 auto 50px;
+	overflow: hidden;
 }
 
-.bioText {
-	padding: 0 15px;
+.projectsDiv {
+	display: none;
 }
 
-
-/*--------Portfolio Page content--------*/
-.portfolioImgDiv {
-	margin: 10px 0;
-	display: inline-block;
-	position: relative;
+.ScndPortRow {
+	margin-top: 65px;
 }
 
-/*The different portfolio images*/
-.portfolioImg {
-	width: 100%;
-	height: 100%;
+.skillsblock {
+    padding: 20px 60px;
 }
 
-.portfolioImgDiv:hover {
-	opacity: 0.75;
-}
-
-/*The block of text in fromt of the portfolio images*/
-.imageText {
-	position: absolute;
-	top: 70%;
-	width: 100%;
-	color: white;
-	background-color: rgba(0, 0, 0, 0.75);
-	text-align: center;
-	padding-top: 4%;
-	padding-bottom: 4%;
-}
-
-.portImgCol {
-	text-align: center;
-}
-
-
-
-/*--------Contact Page content--------*/
-/*Code turns off the resize on the input fields.*/
-.noResize {
+textarea {
+	display: block;
+	width: 538px;
+	height: 177px;
+	margin: 15px auto;
+	border-radius: 10px;
+	border: 2px solid rgb(36, 39, 47);
+	box-shadow: 2px 4px 11px rgba(0, 0, 0, 0.72);
 	resize: none;
-}
-
-label {
-	color: #696969;
-}
-
-/*This code affects the submit button and color codes it to the match the theme.*/
-.btn {
-	background: #4aaaa5;
-	color: white;
-}
-
-.btn.focus, .btn:focus, .btn:hover {
-	color: #e6e6e6;
-	text-decoration: none;
-	background: #4c9e9a;
-}
-
-
-
-/*Tweaks made to the background of the header to be green and all encompasing in the smallest size.*/
-@media screen and (max-width: 767px) {
-	.container>.navbar-header {
-		margin-right: -15px;
-		margin-left: -15px;
-		background: #4aaaa5;
-	}
-
-	.mainContent, .aside {
-		left: 2%;
-		width: 96%;
-	}
-}
-
-/*Tweaks made to keep the right nav bar in place and to keep the bars between the links smaller.*/
-@media (min-width: 767px)  {
-	.navbar-nav {
-    	margin-right: -50px;
-	}
-
-	.headerBar {
-		overflow: hidden;
-	}
-
-	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-		margin-top: 15px;
-	}
-
-	.navbar-nav>li>a {
-		padding-bottom: 2px;
-		padding-top: 0;
-	}
-}
-
-@media (min-width: 992px)  {
-	.navbar-nav {
-    	margin-right: 175px;
-	}
-
-	.aside {
-		margin-left: 48px;
-		width: 292px;
-	}
-}
-
-@media (min-width: 1200px)  {
-	.navbar-nav {
-    	margin-right: 95px;
-	}
+	padding: 12px;
 }

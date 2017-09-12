@@ -1,93 +1,305 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
-	<meta charset="utf-8">
+	<title>Jon Berry: Web Developer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-
-	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-	<link href="https://fonts.googleapis.com/css?family=News+Cycle|Passion+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Press+Start+2P" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-	<title>Jon Berry Portfolio</title>
 </head>
 <body>
-	<nav class="navbar navbar-default navJon">
-		<div class="container headerBar">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span> 
-				</button>
-				<a class="navbar-brand" href="index.html">Jon Berry</a>
+
+	<div class="container container1">
+		<div class="row">
+			<div class="introDiv col-xs-12">
+				<h1 class="introH1"></h1>
 			</div>
-
-			<div class="collapse navbar-collapse navbar-right" id="myNavbar">
-				<ul class="nav navbar-nav">
-					<li><a href="index.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li> 
-					<li><a href="contact.html">Contact</a></li> 
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-	<div class="container">
-		<div class="row mainRow">
-			<div class="col-lg-7 col-md-5 col-xs-12 mainContent">
-				<div class="row">
-					<div class="col-lg-12 col-xs-12">
-						<h2>About Me</h2>
-						<hr>
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
-						<div>
-							<img class="bioPic" src="assets/images/jonb.jpg" alt="Jon Berry">
-						</div>
-						
-					</div>
-
-					<!-- This code is outside of a column to wrap around the bootstrap controlled image. -->
-					<p class="bioText">For as long as he can remember, Jon Berry has roamed the far corners of the earth, regaling those in his path with tales most humorous. His education at the Savannah College of Art and Design resulted in a degree in Film and Television and a skill set that would serve him in his next endeavor: international advertising. Jon's passion for screenwriting and visual storytelling ultimately lead him to San Francisco, where he would go on to write for several game projects and ongoing web content.</p>
-
-					<p class="bioText">These days, Jon can be found developing narratives for gaming and virtual reality experiences, studying the future of storytelling in emergant mediums, and enjoying a partly-sunny Bay Area day with his wife and cat.</p>
-				</div>
-	
-			</div>
-
-			<div class="col-lg-5 col-md-7 col-xs-12 aside">
-				<h3>Connect With Me</h3>
-			
-				<hr>
-
-				<!--Buttons to connect with me-->
-				<a class="connectLinks" href="https://github.com/jonpber" target="_blank"> <img class="connectIcons" src="assets/images/Github.png" alt="GitHub"></a>
-				<a class="connectLinks" href="https://www.linkedin.com/in/jonpber/" target="_blank"><img class="connectIcons" src="assets/images/linkedin.png" alt="LinkedIn"></a>
-				<a class="connectLinks" href="http://stackoverflow.com/users/7799613/jon-berry" target="_blank"><img class="connectIcons" src="assets/images/stackoverflow.png" alt="StackOverflow"></a>
-			</div>
-
 		</div>
 	</div>
 
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 aboutMeText text-center">
+				<h3>A web developer & writer with a dynamic background in gaming and advertising, Jon Berry creates works that merge the playful with the practical.</h3>
+			</div>
+		</div>
+	</div>
 
-	<footer class="container-fluid">
-		<p class="footerP">@ Copyright 2017 Jon Berry</p>
-	</footer>
+	<div class="container container2">
+		<h2 class="blackH2">Projects</h2>
+		<div class="projectsDiv">
+			<div class="row">
+				<div class="col-xs-6 col-md-4 text-center">
+					<div class="card">
+						<div class="front">
+							<div class="portImg">
+								<a href="https://jonpber.github.io/RPS-Multiplayer/">
+									<img src="assets/images/rps.JPG" alt="rps">
+								</a>
+							</div>
+						</div>
+						<div class="back">
+							<div class="portImg">
+								<div class="portBack">
+									<a href="https://jonpber.github.io/RPS-Multiplayer/">
+										<h4>RPS Online</h4>
+										<hr>
+										<h4>A multiplayer Rock-Paper-Scissors game, built using Javascript, JQuery, and Firebase.</h4>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-4 text-center">
+					<div class="card">
+						<div class="front">
+							<div class="portImg">
+								<a href="https://jonpber.github.io/TriviaGame/">
+									<img src="assets/images/trivia.jpg" alt="trivia">
+								</a>
+							</div>
+						</div>
+						<div class="back">
+							<div class="portImg">
+								<div class="portBack">
+									<a href="https://jonpber.github.io/TriviaGame/">
+										<h4>Trivia</h4>
+										<hr>
+										<h4>A category-based trivia game built using Javascript & JQuery.</h4>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-4 text-center">
+					<div class="card">
+						<div class="front">
+							<div class="portImg">
+								<a href="https://jonpber.github.io/Hangman-Game/">
+									<img src="assets/images/hangman.jpg" alt="hangman">
+								</a>
+							</div>
+						</div>
+						<div class="back">
+							<div class="portImg">
+								<div class="portBack">
+									<a href="https://jonpber.github.io/Hangman-Game/">
+										<h4>Hangman</h4>
+										<hr>
+										<h4>A Javascript-based, video-game-themed Hangman browser game.</h4>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-4 text-center">
+					<div class="card">
+						<div class="front">
+							<div class="portImg">
+								<a href="https://burgeremperorii.herokuapp.com/">
+									<img src="assets/images/burger.jpg" alt="burger">
+								</a>
+							</div>
+						</div>
+						<div class="back">
+							<div class="portImg">
+								<div class="portBack">
+									<a href="https://burgeremperorii.herokuapp.com/">
+										<h4>Burger Emperor</h4>
+										<hr>
+										<h4>A MySQL-based faux-restaurant mockup built using Javascript and JQuery.</h4>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-4 text-center">
+					<div class="card">
+						<div class="front">
+							<div class="portImg">
+								<a href="https://jonpber.github.io/RPG/">
+									<img src="assets/images/starwars.jpg" alt="starwars">
+								</a>
+							</div>
+						</div>
+						<div class="back">
+							<div class="portImg">
+								<div class="portBack">
+									<a href="https://jonpber.github.io/RPG/">
+										<h4>Star Wars RPG Game</h4>
+										<hr>
+										<h4>A Star Wars themed combat RPG game built using Javascript and JQuery.</h4>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-4 text-center">
+					<div class="card">
+						<div class="front">
+							<div class="portImg">
+								<a href="https://jonpber.github.io/Crystals/">
+									<img src="assets/images/crystal.jpg" alt="crystal">
+								</a>
+							</div>
+						</div>
+						<div class="back">
+							<div class="portImg">
+								<div class="portBack">
+									<a href="https://jonpber.github.io/Crystals/">
+										<h4>Crystal Counter</h4>
+										<hr>
+										<h4>A Javascript-based browser game.</h4>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
+	<div class="container skillsblock">
+		<div class="row">
+			<h2 class="blueH2">Skills</h2>
+			<div class="col-xs-4 skills">
+				<h3>Web Development
+				<ul>
+					<li>Javascript</li>
+					<li>JQuery</li>
+					<li>Bootstrap</li>
+					<li>Materialize</li>
+					<li>Node.JS</li>
+					<li>Express.JS</li>
+					<li>MySQL</li>
+					<li>Sequelize</li>
+					<li>MongoDB</li>
+					<li>Mocha</li>
+					<li>Chai</li>
+					<li>Nightmare.js</li>
+				</ul> 
+			</div>
+
+			<div class="col-xs-4 skills">
+				<h3>Software
+				<ul>
+					<li>Adobe Photoshop</li>
+					<li>Adobe InDesign</li>
+					<li>Adobe Illustrator</li>
+					<li>Adobe Premiere</li>
+					<li>Final Cut</li>
+					<li>Avid Media Composer</li>
+					<li>Final Draft</li>
+					<li>MemoQ</li>
+					<li>Unity</li>
+				</ul> 
+			</div>
+
+			<div class="col-xs-4 skills">
+				<h3>Content
+				<ul>
+					<li>Design</li>
+					<li>Web Content Writing</li>
+					<li>Blogging</li>
+					<li>Copy Editing</li>
+					<li>English/Spanish Translation</li>
+					<li>2D Video Editing</li>
+					<li>360° Video Editing</li>
+				</ul> 
+			</div>
+		</div>
+	</div>
+
+	<div class="container container3">
+		<h2 class="blackH2">My Profiles</h2>
+		<div class="row">
+			<div class="col-xs-4 text-center">
+				<div class="card">
+						<div class="front">
+							<a href="https://www.linkedin.com/in/jonpber/">
+								<img src="assets/images/linkedin.png" class="linkIcon">
+								<h3 class="h3NoPix">Linkedin</h3>
+							</a>
+						</div>
+						<div class="back">
+							<a href="https://www.linkedin.com/in/jonpber/">
+								<img src="assets/images/linkedinPix.png" class="linkIcon">
+								<h3 class="h3Pix">Linkedin</h3>
+							</a>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-xs-4 text-center">
+				<div class="card">
+						<div class="front">
+							<a href="https://github.com/jonpber">
+								<img src="assets/images/Github.png" class="linkIcon">
+								<h3 class="h3NoPix">Github</h3>
+							</a>
+						</div>
+						<div class="back">
+							<a href="https://github.com/jonpber">
+								<img src="assets/images/GithubPix.png" class="linkIcon">
+								<h3 class="h3Pix">Github</h3>
+							</a>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-xs-4 text-center">
+					<div class="card">
+						<div class="front">
+							<a href="https://stackoverflow.com/users/7799613/jon-berry">
+								<img src="assets/images/stackoverflow.png" class="linkIcon">
+								<h3 class="h3NoPix">Stack Overflow</h3>
+							</a>
+						</div>
+						<div class="back">
+							<a href="https://stackoverflow.com/users/7799613/jon-berry">
+								<img src="assets/images/stackoverflowPix.png" class="linkIcon">
+								<h3 class="h3Pix">Stack Overflow</h3>
+							</a>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container contact">
+		<h2 class="blueH2">Get in Touch</h2>
+		<div class="row">
+			<div class="col-xs-12 getInTouch">
+				<form action="mailto:jonpber@gmail.com" method="post">
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon1">Name</span>
+						<input type="text" class="form-control" placeholder="Joey Joe Joe" aria-describedby="basic-addon1" name="name">
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon1">Email</span>
+						<input type="text" class="form-control" placeholder="Guy@Incognito.com" aria-describedby="basic-addon1" name="email">
+					</div>
+					<textarea name="comment"></textarea>
+
+					<input type="submit" name="submit">
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+	<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4.2.0/dist/masonry.pkgd.min.js"></script>
+	<script src="assets/js/jquery-ui.js"></script>
+	<script src="assets/js/site.js"></script>
 </body>
 </html>
