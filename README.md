@@ -1,9 +1,11 @@
 # jonpber.github.io
 
-My current portoflio, a place to see my projects and skills.
-
 ![Portfolio1](http://i.imgur.com/YJnPUt0.gif)
 
+My current portoflio, a place to see my projects and skills.
+
+
+![Portfolio1](http://i.imgur.com/nxulfE7.gif)
 
 # Technology Used
 
